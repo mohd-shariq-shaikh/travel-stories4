@@ -1,5 +1,8 @@
 import axios from 'axios';
+import dotenv from 'dotenv';
 
+dotenv.config();
+export const your_jwt_secret = process.env.NEXT_PUBLIC_JWT_SECRET;
 export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
 export const createOrGetUser = async (response: any, addUser: any) => {
@@ -19,6 +22,7 @@ export const createOrGetUser = async (response: any, addUser: any) => {
   };
   
   addUser(user);
+  console.log(user);
 
   await axios.post(`${BASE_URL}/api/auth`, user);
 };

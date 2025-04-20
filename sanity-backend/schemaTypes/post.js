@@ -9,9 +9,13 @@ export default {
         type: 'string',
       },
       {
-        name: 'image',
-        title: 'Image',
-        type: 'string',
+        name: 'image_post',
+        title: 'Image Post',
+          type: "file",
+          // asset: {
+          //   ref: "image-15183a72c1729d6a000eca5f261dd264ffb15469-1200x960-jpg",
+          //   type: "reference"
+          // },
         options: {
           hotspot: true,
         },

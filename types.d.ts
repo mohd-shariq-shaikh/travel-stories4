@@ -1,6 +1,6 @@
 export interface ImagePost {
     caption: string;
-    image: {
+    image_post: {
       asset: {
         _id: string;
         url: string;
